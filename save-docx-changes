@@ -1,0 +1,13 @@
+#!/bin/sh
+
+find -name '*.docx' -exec libreoffice --headless --convert-to pdf:writer_pdf_Export {} +
+
+git stash
+git pull --rebase
+
+git stash pop
+
+git add .
+git commit -m "[$(printf '%03d' "$(git rev-list --all --count)")]"
+
+git push
