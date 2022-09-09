@@ -14,5 +14,5 @@ Homeworks
 
 ## Для продвинутых: 
    Eсли файл save-docx-change запустить в вашем локальном репозитории (Работает на Linux) и у вас установлен, 
-   пакет libre-office, то для все файлов "name_of_file.docx" он сгенерирует "name_of_file.pdf"
+   пакет libre-office, то для всех файлов "name_of_file.docx" он сгенерирует "name_of_file.pdf"
    и запушит все изменения в вашем репозитории на GitHub.
