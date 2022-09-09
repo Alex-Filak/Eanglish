@@ -1,6 +1,6 @@
 #!/bin/sh
 
-find -name '*.docx' -exec libreoffice --headless --convert-to pdf:writer_pdf_Export {} +
+find -name '*.docx' -execdir libreoffice --headless --convert-to pdf:writer_pdf_Export {} +
 
 git stash
 git pull --rebase
